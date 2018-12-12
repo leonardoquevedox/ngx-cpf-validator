@@ -37,11 +37,19 @@ import { NgxCpfValidator } from 'ngx-cpf-validator'
 
 In your template, you can declare the ngx-cpf-validator as the following:
 ```html
-<input type="tel" ngx-cpf [(ngModel)]="user.cpf" name="userCpf" #cpfInput >
+<form>
+    <!-- Input with the CPF validator -->
+    <input type="tel" ngx-cpf [(ngModel)]="user.cpf" name="userCpf" #cpfInput >
+    <!-- Show an error message -->
+    <div *ngIf="cpfInput && cpfInput.errors && cpfInput.errors.cpf">
+        The CPF provided is not valid.
+    </div>
+    <!-- Disable the form in case of validation errors -->
+    <button [disabled]="!form.valid">
+        Submit!
+    </button>
+</form>
 
-<div *ngIf="cpfInput && cpfInput.errors && cpfInput.errors.cpf">
-    The CPF provided is not valid.
-</div>
 ```
 
 ### And that's all there is about it.
