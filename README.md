@@ -1,9 +1,8 @@
 # Ngx-cpf-validator
+
+> Ngx-cpf-validator is an ultra simple cpf validator for Angular.io.
+
 [![basic-merchandising](https://imgur.com/LNOYczf.png)](https://github.com/leopq)
-
-## Hi, there!
-
-> Ngx-cpf-validator is an ultra simple cpf validator for Angular.io (v2+).
 
 **Disclaimer**: I use this module for personal projects, which means it is designed to fulfill their specific use cases. The code I develop is crafted with reuse and generalization in mind, still, it may or may not fulfill for your requirements. In case it does not, please feel free to submit a pull request, create a fork or contact me at lpachecoquevedo@gmail.com so we can figure something out together. Thank you for reading this!
 
