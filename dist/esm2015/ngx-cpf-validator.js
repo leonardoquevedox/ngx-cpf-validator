@@ -1,0 +1,11 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { Directive, NgxCpfValidatorModule } from './public_api';
+export { NgxCpfValidator as ɵa } from './ngx-cpf.directive';
+export { CpfValidator as ɵb } from './ngx-cpf.validator';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmd4LWNwZi12YWxpZGF0b3IuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZ3gtY3BmLXZhbGlkYXRvci8iLCJzb3VyY2VzIjpbIm5neC1jcGYtdmFsaWRhdG9yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFJQSxpREFBYyxjQUFjLENBQUM7QUFFN0IsT0FBTyxFQUFDLGVBQWUsSUFBSSxFQUFFLEVBQUMsTUFBTSxxQkFBcUIsQ0FBQztBQUMxRCxPQUFPLEVBQUMsWUFBWSxJQUFJLEVBQUUsRUFBQyxNQUFNLHFCQUFxQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHZW5lcmF0ZWQgYnVuZGxlIGluZGV4LiBEbyBub3QgZWRpdC5cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL3B1YmxpY19hcGknO1xuXG5leHBvcnQge05neENwZlZhbGlkYXRvciBhcyDJtWF9IGZyb20gJy4vbmd4LWNwZi5kaXJlY3RpdmUnO1xuZXhwb3J0IHtDcGZWYWxpZGF0b3IgYXMgybVifSBmcm9tICcuL25neC1jcGYudmFsaWRhdG9yJzsiXX0=

@@ -6,11 +6,13 @@
 
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
-import { NgxCpfValidator } from './ngx-cpf-validator'
+import { NgxCpfValidator } from './ngx-cpf.directive'
+
+export const Directive = [NgxCpfValidator];
 
 @NgModule({
     imports: [CommonModule],
-    declarations: [NgxCpfValidator],
-    exports: [NgxCpfValidator]
+    declarations: [Directive],
+    exports: [Directive]
 })
 export class NgxCpfValidatorModule { }

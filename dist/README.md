@@ -1,77 +1,54 @@
-# Ngx-address-autocomplete
+# Ngx-cpf-validator
+
+> Ngx-cpf-validator is an ultra simple cpf validator for Angular.io.
+
 [![basic-merchandising](https://imgur.com/LNOYczf.png)](https://github.com/leopq)
 
-## Hi, there!
-
-> Ngx-address-autocomplete is a self contained address autocomplete directive for Angular 2+ based on the Google Places Autcomplete API. Along with initializing the autocomplete into any  input, the directive also parses the address object into an [human-friendly](#address-data-structure) format.
-
-**Disclaimer**: I use this module for personal projects, which means it is designed to fulfill their specific use cases. The code I develop is crafted with reuse and generalism in mind, still, it may or may not fulfill for your requirements. In case it does not, please feel free to submit a pull request, create a fork or contact me at lpachecoquevedo@gmail.com so we can figure something out together. Thank you for reading this!
+**Disclaimer**: I use this module for personal projects, which means it is designed to fulfill their specific use cases. The code I develop is crafted with reuse and generalization in mind, still, it may or may not fulfill for your requirements. In case it does not, please feel free to submit a pull request, create a fork or contact me at lpachecoquevedo@gmail.com so we can figure something out together. Thank you for reading this!
 
 ## Installing
 
 ```sh
-$ npm install --save ngx-address-autocomplete
+$ npm install --save ngx-cpf-validator
 ```
 
 ## Quickstart
 
-Import **ngx-address-autocomplete** module in Angular app.
+#### Import
+
+Import **ngx-cpf-validator** module in Angular app.
 
 ```typescript
-import { NgxAddressAutocomplete } from 'ngx-address-autocomplete'
+import { NgxCpfValidator } from 'ngx-cpf-validator'
 
 (...)
 
 @NgModule({
   (...)
   imports: [
-    NgxAddressAutocomplete.forRoot()
+    NgxCpfValidator.forRoot()
   ]
   (...)
 })
 ```
 
-Then, just define masks in inputs.
-
 #### Usage
 
-In your template, you can declare the ngx-address-autocomplete as the following:
+In your template, you can declare the ngx-cpf-validator as the following:
 ```html
-<input type='text' ngx-address-autocomplete (onSelect)='onAddressSelected($event)' >
-```
+<form>
+    <!-- Input with the CPF validator -->
+    <input type="tel" ngx-cpf [(ngModel)]="user.cpf" name="userCpf" #cpfInput >
+    <!-- Show an error message -->
+    <div *ngIf="cpfInput && cpfInput.errors && cpfInput.errors.cpf">
+        The CPF provided is not valid.
+    </div>
+    <!-- Disable the form in case of validation errors -->
+    <button [disabled]="!form.valid">
+        Submit!
+    </button>
+</form>
 
-In your TS class, then, you can handle the select event:
-```typescript
-export default class AddressPage{
-
-    constructor() { }
-
-    onAddressSelected(e) {
-      console.log(e.place) // Native Google Place object
-      console.log(e.address) // Address obect as demonstrated on the section below.
-    }
-
-}
-```
-
-#### Address Data Structure
-
-Description of address returned from the direction on user selection of address:
-
-```typescript
-  const address = {
-      street: string,
-      streetNumber: string,
-      location: {
-        lat: number,
-        lng: number
-      }
-      neighbourhood: string, 
-      city: string,
-      state: string,
-      country: string,
-      postalCode: string
-  }
 ```
 
 ### And that's all there is about it.

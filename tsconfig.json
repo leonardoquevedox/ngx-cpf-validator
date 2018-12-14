@@ -14,13 +14,14 @@
         ],
         "suppressImplicitAnyIndexErrors": true,
         "allowUnreachableCode": false,
-        "declaration": true,
+        "declaration": false,
         "noImplicitAny": false,
         "removeComments": true,
         "noStrictGenericChecks": false
     },
     "include": [
         "src/*.ts",
+        "src/**/*.ts"
     ],
     "exclude": [
         "node_modules"

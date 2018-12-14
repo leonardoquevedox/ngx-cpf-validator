@@ -1,1 +1,1 @@
-export * from './ngx-address-autocomplete.module';
+export * from './ngx-cpf-validator.module';

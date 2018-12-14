@@ -1,10 +1,13 @@
 {
     "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
     "whitelistedNonPeerDependencies": [
-        "types",
+        "gerador-validador-cpf",
         "angular"
     ],
     "lib": {
+        "umdModuleIds": {
+            "gerador-validador-cpf": "CPF"
+        },
         "entryFile": "./src/public_api.ts"
     }
 }
