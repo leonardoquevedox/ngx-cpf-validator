@@ -55,3 +55,5 @@ In your template, you can declare the ngx-cpf-validator as the following:
 * Any doubts? Fell free to open an issue.
 * Improvements? Pull requests are always come!
 * Suggestions? Of course: Let's [talk](https://twitter.com/leopq)!
+
+##### MIT @ Leonardo Quevedo. 2018.
